@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div className="flex justify-center md:justify-start">
              <Link href="/" className="flex items-center space-x-2 group">
-                <Image src="/Libertad.png" alt="Club Libertad Logo" width={48} height={48} className="h-12 w-auto" />
+                <Image src="/Logo.svg" alt="Club Libertad Logo" width={48} height={48} className="h-12 w-auto" />
                 <span className="font-semibold text-xl text-primary group-hover:text-accent transition-colors">
                   Club Libertad
                 </span>
@@ -19,21 +19,15 @@ export function Footer() {
           
           <div className="text-center text-sm text-muted-foreground">
             <p>&copy; {currentYear} Club Atlético Libertad. All rights reserved.</p>
-            <p>Designed with passion.</p>
+            <p>Decano del Futbol Canario.</p>
           </div>
 
           <div className="flex justify-center md:justify-end space-x-4">
-            <Link href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="https://www.facebook.com/OficialCAL" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
               <Facebook className="h-6 w-6" />
             </Link>
-            <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter className="h-6 w-6" />
-            </Link>
-            <Link href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="https://www.instagram.com/decanocanario" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
               <Instagram className="h-6 w-6" />
-            </Link>
-            <Link href="#" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors">
-              <Youtube className="h-6 w-6" />
             </Link>
           </div>
         </div>

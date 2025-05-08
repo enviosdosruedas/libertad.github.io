@@ -10,7 +10,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 group">
-          <Image src="/Libertad.png" alt="Club Libertad Logo" width={40} height={40} className="h-10 w-auto" />
+          <Image src="/Logo.svg" alt="Club Libertad Logo" width={40} height={40} className="h-10 w-auto" />
           <span className="font-semibold text-xl text-primary group-hover:text-accent transition-colors">
             Club Libertad
           </span>
@@ -31,7 +31,7 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col space-y-4 mt-8">
                 <Link href="/" className="flex items-center space-x-2 mb-4 group">
-                  <Image src="/Libertad.png" alt="Club Libertad Logo" width={40} height={40} className="h-10 w-auto" />
+                  <Image src="/Logo.svg" alt="Club Libertad Logo" width={40} height={40} className="h-10 w-auto" />
                    <span className="font-semibold text-xl text-primary group-hover:text-accent transition-colors">
                     Club Libertad
                   </span>
