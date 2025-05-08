@@ -5,6 +5,7 @@ import { HeroPrincipal } from '../components/hero-principal';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Trophy, Users, CalendarDays } from 'lucide-react';
 import { ProximosPartidos } from '@/components/proximos-partidos';
+import { UltimasNoticias } from '@/components/ultimasnoticias';
 
 export default function HomePage() {
   return (
@@ -21,6 +22,20 @@ export default function HomePage() {
             </p>
           </div>
           <ProximosPartidos limit={3} showViewAllLink={true} />
+        </div>
+      </section>
+
+      <section className="py-12 md:py-20 bg-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary tracking-tight">
+              Últimas Noticias
+            </h2>
+            <p className="mt-3 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Mantente al día con las novedades más recientes de Club Atlético Libertad.
+            </p>
+          </div>
+          <UltimasNoticias limit={3} showViewAllLink={true} />
         </div>
       </section>
       

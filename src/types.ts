@@ -29,3 +29,13 @@ export interface Match {
   opponentScore?: number;
   highlightsLink?: string; // Optional link to highlights
 }
+
+export interface NewsArticle {
+  id: string;
+  title: string;
+  date: string; // ISO string for date
+  extract: string;
+  imageUrl?: string; // Placeholder URL for image
+  content: string; // Full content of the news
+  category?: string;
+}

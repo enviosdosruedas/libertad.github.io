@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, ScrollText, Users, CalendarDays, Mail } from 'lucide-react';
+import { Home, ScrollText, Users, CalendarDays, Mail, NewspaperIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
@@ -10,6 +10,7 @@ const navItems = [
   { href: '/history', label: 'Historia', icon: ScrollText },
   { href: '/team', label: 'Equipo', icon: Users },
   { href: '/matches', label: 'Partidos', icon: CalendarDays },
+  { href: '/noticias', label: 'Noticias', icon: NewspaperIcon },
   { href: '/contact', label: 'Contacto', icon: Mail },
 ];
 
@@ -22,7 +23,7 @@ export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElemen
       {...props}
     >
       {navItems.map((item) => {
-        const isActive = pathname === item.href;
+        const isActive = pathname === item.href || (item.href === '/noticias' && pathname.startsWith('/noticias'));
         return (
           <Link
             key={item.href}
