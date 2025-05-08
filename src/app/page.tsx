@@ -11,7 +11,7 @@ export default function HomePage() {
 <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/80 via-primary to-red-700 text-primary-foreground shadow-lg">
   <div className="absolute inset-0">
     <Image
-      src="https://picsum.photos/seed/stadium/1920/1080"
+      src="/HeroPrincipal.png"
       alt="Estadio del Club Libertad"
       layout="fill"
       objectFit="cover"
