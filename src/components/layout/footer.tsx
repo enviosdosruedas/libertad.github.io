@@ -1,4 +1,4 @@
-import { ClubLogo } from '@/components/club-logo';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
@@ -10,7 +10,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <div className="flex justify-center md:justify-start">
              <Link href="/" className="flex items-center space-x-2 group">
-                <ClubLogo className="h-12 w-auto" />
+                <Image src="/Libertad.png" alt="Club Libertad Logo" width={48} height={48} className="h-12 w-auto" />
+                <span className="font-semibold text-xl text-primary group-hover:text-accent transition-colors">
+                  Club Libertad
+                </span>
              </Link>
           </div>
           

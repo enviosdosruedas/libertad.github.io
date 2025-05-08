@@ -5,7 +5,6 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { CalendarDays, Clock, MapPin, ShieldCheck, ShieldX, Tv, ArrowRight } from 'lucide-react';
-import { ClubLogo } from '@/components/club-logo'; // Assuming this is appropriate for "our" logo
 
 interface MatchItemProps {
   match: Match;
@@ -57,7 +56,7 @@ export function MatchItem({ match }: MatchItemProps) {
         <div className="flex flex-col items-center text-center space-y-4">
           <div className="flex items-center justify-around w-full">
             <div className="flex flex-col items-center w-1/3">
-              <ClubLogo className="h-12 w-auto md:h-16" />
+              <Image src="/Libertad.png" alt="Club Libertad Logo" width={64} height={64} className="h-12 w-12 md:h-16 md:w-16 object-contain" />
               <span className="font-semibold mt-2 text-lg text-foreground">Club Libertad</span>
             </div>
             <div className="flex flex-col items-center">

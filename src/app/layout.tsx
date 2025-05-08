@@ -17,7 +17,7 @@ import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Club Libertad Oficial',
-  description: 'Official website of Club Atlético Libertad',
+  description: 'Sitio Oficial de Club Atletico Libertad',
 };
 
 export default function RootLayout({

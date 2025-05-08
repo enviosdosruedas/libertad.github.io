@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Trophy, Users, CalendarDays } from 'lucide-react';
-import { ClubLogo } from '@/components/club-logo';
 
 export default function HomePage() {
   return (
@@ -23,7 +22,12 @@ export default function HomePage() {
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <div className="inline-block mb-8 p-4 bg-white/20 rounded-lg shadow-xl">
-            <ClubLogo className="h-24 w-auto" />
+            <div className="flex flex-col items-center">
+              <Image src="/Libertad.png" alt="Club Libertad Logo" width={96} height={96} className="h-24 w-auto" />
+              <span className="mt-2 font-semibold text-2xl text-primary-foreground">
+                Club Libertad
+              </span>
+            </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
             Welcome to Club Atlético Libertad
