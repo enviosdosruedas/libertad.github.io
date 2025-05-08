@@ -1,89 +1,68 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { HeroPrincipal } from '../components/hero-principal';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Trophy, Users, CalendarDays } from 'lucide-react';
+import { ProximosPartidos } from '@/components/proximos-partidos';
 
 export default function HomePage() {
   return (
     <div className="flex flex-col ">
-  {/* Hero Section */}
-<section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/80 via-primary to-red-700 text-primary-foreground shadow-lg">
-  <div className="absolute inset-0">
-    <Image
-      src="/HeroPrincipal.png"
-      alt="Estadio del Club Libertad"
-      layout="fill"
-      objectFit="cover"
-      className="opacity-20"
-      data-ai-hint="football stadium"
-    />
-    <div className="absolute inset-0 bg-black/30"></div>
-  </div>
-  <div className="container mx-auto px-4 relative z-10 text-center">
-    <div className="inline-block mb-8 p-4 bg-white/20 rounded-lg shadow-xl">
-      <div className="flex flex-col items-center">
-        <Image src="/Logo.svg" alt="Escudo del Club Libertad" width={96} height={96} className="h-24 w-auto" />
-        <span className="mt-2 font-semibold text-2xl text-primary-foreground">
-          Club Atlético Libertad
-        </span>
-      </div>
-    </div>
-    <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-      El corazón futbolero de Canelones desde 1906
-    </h1>
-    <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-      Fundado con la pasión del fútbol uruguayo naciente. Descubre nuestra rica historia, el equipo actual y las últimas novedades del "Libertad".
-    </p>
-    <div className="space-x-4">
-      <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 rounded-lg shadow-md transition-transform hover:scale-105">
-        <Link href="/matches">Próximos Partidos <ArrowRight className="ml-2 h-5 w-5" /></Link>
-      </Button>
-      <Button asChild variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg shadow-md transition-transform hover:scale-105">
-        <Link href="/history">Nuestro Legado</Link>
-      </Button>
-    </div>
-  </div>
-</section>
-
-      {/* Quick Links Section */}
-      <section className="py-16 bg-background">
+      <HeroPrincipal />
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Explore Our Club</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/history" className="group">
-              <Card className="hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-                <CardHeader className="items-center text-center">
-                  <Trophy className="h-12 w-12 text-primary mb-4 group-hover:text-accent transition-colors" />
-                  <CardTitle className="text-2xl group-hover:text-primary transition-colors">Our Rich History</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center flex-grow">
-                  <p className="text-muted-foreground">Founded in 1906, explore the legacy and triumphs of Club Libertad.</p>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/team" className="group">
-              <Card className="hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-                <CardHeader className="items-center text-center">
-                  <Users className="h-12 w-12 text-primary mb-4 group-hover:text-accent transition-colors" />
-                  <CardTitle className="text-2xl group-hover:text-primary transition-colors">Meet the Team</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center flex-grow">
-                  <p className="text-muted-foreground">Get to know our talented players and dedicated technical staff.</p>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/matches" className="group">
-              <Card className="hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-                <CardHeader className="items-center text-center">
-                  <CalendarDays className="h-12 w-12 text-primary mb-4 group-hover:text-accent transition-colors" />
-                  <CardTitle className="text-2xl group-hover:text-primary transition-colors">Matches & Results</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center flex-grow">
-                  <p className="text-muted-foreground">Stay updated with our match schedule and latest game results.</p>
-                </CardContent>
-              </Card>
-            </Link>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary tracking-tight">
+              Próximos Encuentros
+            </h2>
+            <p className="mt-3 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              No te pierdas los próximos partidos de Club Atlético Libertad. ¡Acompaña al equipo!
+            </p>
+          </div>
+          <ProximosPartidos limit={3} showViewAllLink={true} />
+        </div>
+      </section>
+      
+      <section className="py-12 md:py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <Trophy className="h-12 w-12 mx-auto text-accent mb-4" />
+                <CardTitle className="text-2xl text-foreground">Nuestra Historia</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Desde 1906 forjando un legado de pasión y fútbol en Canelones.</p>
+                <Button asChild variant="outline">
+                  <Link href="/history">Descubrir Legado <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <Users className="h-12 w-12 mx-auto text-accent mb-4" />
+                <CardTitle className="text-2xl text-foreground">Nuestro Equipo</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Conoce a los jugadores y cuerpo técnico que defienden nuestros colores.</p>
+                <Button asChild variant="outline">
+                  <Link href="/team">Ver Plantel <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CalendarDays className="h-12 w-12 mx-auto text-accent mb-4" />
+                <CardTitle className="text-2xl text-foreground">Únete al Club</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">Forma parte de la familia Gumarela. Información de contacto y cómo asociarte.</p>
+                <Button asChild variant="outline">
+                  <Link href="/contact">Contactanos <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

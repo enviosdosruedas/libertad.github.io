@@ -1,5 +1,6 @@
 Estructura de: /home/user/studio/public
 public/
+├── HeroPrincipal.png
 ├── Liberdad Escudo.jpg
 ├── Libertad.png
 └── Logo.svg
@@ -63,6 +64,7 @@ src/
 │   │   ├── toast.tsx
 │   │   ├── toaster.tsx
 │   │   └── tooltip.tsx
+│   ├── hero-principal.tsx
 │   ├── match-item.tsx
 │   └── team-member-card.tsx
 ├── hooks/

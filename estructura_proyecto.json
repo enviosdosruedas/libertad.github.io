@@ -6,6 +6,7 @@
     "components": {
       "__files__": [
         "match-item.tsx",
+        "hero-principal.tsx",
         "team-member-card.tsx"
       ],
       "ui": {
@@ -109,7 +110,8 @@
     "__files__": [
       "Liberdad Escudo.jpg",
       "Libertad.png",
-      "Logo.svg"
+      "Logo.svg",
+      "HeroPrincipal.png"
     ]
   }
 }
