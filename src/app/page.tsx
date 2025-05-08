@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Trophy, Users, CalendarDays } from 'lucide-react';
 import { ProximosPartidos } from '@/components/proximos-partidos';
 import { UltimasNoticias } from '@/components/ultimasnoticias';
+import { HistoriaResumen } from '@/components/historiaresumen';
 
 export default function HomePage() {
   return (
@@ -39,21 +40,15 @@ export default function HomePage() {
         </div>
       </section>
       
+      <section className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <HistoriaResumen />
+        </div>
+      </section>
+
       <section className="py-12 md:py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <Card className="shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <Trophy className="h-12 w-12 mx-auto text-accent mb-4" />
-                <CardTitle className="text-2xl text-foreground">Nuestra Historia</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">Desde 1906 forjando un legado de pasión y fútbol en Canelones.</p>
-                <Button asChild variant="outline">
-                  <Link href="/history">Descubrir Legado <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-8 text-center">
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <Users className="h-12 w-12 mx-auto text-accent mb-4" />
