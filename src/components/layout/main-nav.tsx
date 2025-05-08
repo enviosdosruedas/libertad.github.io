@@ -6,11 +6,11 @@ import { Home, ScrollText, Users, CalendarDays, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { href: '/', label: 'Home', icon: Home },
-  { href: '/history', label: 'History', icon: ScrollText },
-  { href: '/team', label: 'Team', icon: Users },
-  { href: '/matches', label: 'Matches', icon: CalendarDays },
-  { href: '/contact', label: 'Contact', icon: Mail },
+  { href: '/', label: 'Inicio', icon: Home },
+  { href: '/history', label: 'Historia', icon: ScrollText },
+  { href: '/team', label: 'Equipo', icon: Users },
+  { href: '/matches', label: 'Partidos', icon: CalendarDays },
+  { href: '/contact', label: 'Contacto', icon: Mail },
 ];
 
 export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElement>) {

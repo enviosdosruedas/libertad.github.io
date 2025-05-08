@@ -31,11 +31,11 @@ export function Header() {
                   <ClubLogo className="h-10 w-auto" />
                 </Link>
                 {[
-                  { href: '/', label: 'Home' },
-                  { href: '/history', label: 'History' },
-                  { href: '/team', label: 'Team' },
-                  { href: '/matches', label: 'Matches' },
-                  { href: '/contact', label: 'Contact' },
+                  { href: '/', label: 'Inicio' },
+                  { href: '/history', label: 'Historia' },
+                  { href: '/team', label: 'Equipo' },
+                  { href: '/matches', label: 'Partidos' },
+                  { href: '/contact', label: 'Contacto' },
                 ].map((item) => (
                   <Link
                     key={item.href}
