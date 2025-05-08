@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -7,6 +8,7 @@ import { ArrowRight, Trophy, Users, CalendarDays } from 'lucide-react';
 import { ProximosPartidos } from '@/components/proximos-partidos';
 import { UltimasNoticias } from '@/components/ultimasnoticias';
 import { HistoriaResumen } from '@/components/historiaresumen';
+import { ElClubHoy } from '@/components/elclubhoy';
 
 export default function HomePage() {
   return (
@@ -45,6 +47,8 @@ export default function HomePage() {
           <HistoriaResumen />
         </div>
       </section>
+
+      <ElClubHoy />
 
       <section className="py-12 md:py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
