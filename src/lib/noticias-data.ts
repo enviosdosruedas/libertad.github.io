@@ -7,7 +7,7 @@ export const noticias: NewsArticle[] = [
     date: '2024-08-01T10:00:00Z',
     extract: 'Club Libertad demostró su garra y se impuso con un contundente 3-0 ante su rival tradicional, desatando la alegría de su hinchada.',
     imageUrl: 'https://picsum.photos/seed/noticia1/400/250',
-    content: 'En una tarde soleada y con un estadio repleto, Club Atlético Libertad jugó uno de sus mejores partidos de la temporada. Desde el primer minuto, el equipo mostró una actitud ofensiva y un gran despliegue físico.\nLos goles llegaron por medio de Roque Santa Cruz, Lorenzo Melgarejo y una joya de tiro libre de Héctor Villalba. El técnico Ariel Galeano destacó el compromiso de sus jugadores y la importancia de esta victoria para seguir peleando en lo más alto de la tabla.\nLa afición gumarela celebró hasta altas horas de la noche este triunfo memorable.',
+    content: 'En una tarde soleada y con un estadio repleto, Club Atlético Libertad jugó uno de sus mejores partidos de la temporada. Desde el primer minuto, el equipo mostró una actitud ofensiva y un gran despliegue físico.\nLos goles llegaron por medio de Roque Santa Cruz, Lorenzo Melgarejo y una joya de tiro libre de Héctor Villalba. El técnico Ariel Galeano destacó el compromiso de sus jugadores y la importancia de esta victoria para seguir peleando en lo más alto de la tabla.\nLa afición decabi celebró hasta altas horas de la noche este triunfo memorable.',
     category: 'Primer Equipo',
   },
   {
@@ -16,7 +16,7 @@ export const noticias: NewsArticle[] = [
     date: '2024-07-25T15:30:00Z',
     extract: 'El club anunció la llegada de dos jóvenes promesas que se suman al plantel principal para aportar su talento y frescura.',
     imageUrl: 'https://picsum.photos/seed/noticia2/400/250',
-    content: 'Pensando en los desafíos futuros, la directiva de Club Libertad concretó la incorporación de dos talentosos jugadores. Se trata del mediocampista creativo Juan Pérez, proveniente de las formativas, y el delantero Matías González, con experiencia en ligas menores.\nAmbos jugadores expresaron su entusiasmo por vestir la camiseta gumarela y prometieron darlo todo en cada entrenamiento y partido. "Es un sueño cumplido llegar a un club tan grande como Libertad", comentó Pérez en su presentación oficial.',
+    content: 'Pensando en los desafíos futuros, la directiva de Club Libertad concretó la incorporación de dos talentosos jugadores. Se trata del mediocampista creativo Juan Pérez, proveniente de las formativas, y el delantero Matías González, con experiencia en ligas menores.\nAmbos jugadores expresaron su entusiasmo por vestir la camiseta decabi y prometieron darlo todo en cada entrenamiento y partido. "Es un sueño cumplido llegar a un club tan grande como Libertad", comentó Pérez en su presentación oficial.',
     category: 'Fichajes',
   },
   {

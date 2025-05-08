@@ -19,7 +19,13 @@ src/
 │   │   ├── [id]/
 │   │   │   └── page.tsx
 │   │   └── page.tsx
+│   ├── noticias/
+│   │   ├── [id]/
+│   │   │   └── page.tsx
+│   │   └── page.tsx
 │   ├── team/
+│   │   └── page.tsx
+│   ├── tienda/
 │   │   └── page.tsx
 │   ├── favicon.ico
 │   ├── globals.css
@@ -64,13 +70,22 @@ src/
 │   │   ├── toast.tsx
 │   │   ├── toaster.tsx
 │   │   └── tooltip.tsx
+│   ├── elclubhoy.tsx
+│   ├── haztesocio.tsx
 │   ├── hero-principal.tsx
+│   ├── historiaresumen.tsx
 │   ├── match-item.tsx
-│   └── team-member-card.tsx
+│   ├── proximos-partidos.tsx
+│   ├── team-member-card.tsx
+│   ├── tiendaoficial.tsx
+│   └── ultimasnoticias.tsx
 ├── hooks/
 │   ├── use-mobile.tsx
 │   └── use-toast.ts
 ├── lib/
+│   ├── equipos-data.ts
+│   ├── noticias-data.ts
+│   ├── partidos-data.ts
 │   ├── placeholder-data.ts
 │   └── utils.ts
 └── types.ts

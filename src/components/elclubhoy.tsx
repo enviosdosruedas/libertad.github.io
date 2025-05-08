@@ -14,7 +14,7 @@ export function ElClubHoy() {
             El Club Hoy: Presente y Futuro
           </h2>
           <p className="mt-3 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Descubre la actualidad de nuestro equipo, nuestros proyectos y cómo ser parte de la familia Gumarela.
+            Descubre la actualidad de nuestro equipo, nuestros proyectos y cómo ser parte de la familia del Decano.
           </p>
         </div>
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">

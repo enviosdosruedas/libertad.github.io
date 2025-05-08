@@ -7,7 +7,13 @@
       "__files__": [
         "match-item.tsx",
         "hero-principal.tsx",
-        "team-member-card.tsx"
+        "elclubhoy.tsx",
+        "tiendaoficial.tsx",
+        "team-member-card.tsx",
+        "haztesocio.tsx",
+        "proximos-partidos.tsx",
+        "ultimasnoticias.tsx",
+        "historiaresumen.tsx"
       ],
       "ui": {
         "__files__": [
@@ -56,8 +62,11 @@
     },
     "lib": {
       "__files__": [
+        "partidos-data.ts",
         "utils.ts",
-        "placeholder-data.ts"
+        "placeholder-data.ts",
+        "noticias-data.ts",
+        "equipos-data.ts"
       ]
     },
     "ai": {
@@ -84,7 +93,22 @@
           "page.tsx"
         ]
       },
+      "noticias": {
+        "__files__": [
+          "page.tsx"
+        ],
+        "[id]": {
+          "__files__": [
+            "page.tsx"
+          ]
+        }
+      },
       "team": {
+        "__files__": [
+          "page.tsx"
+        ]
+      },
+      "tienda": {
         "__files__": [
           "page.tsx"
         ]

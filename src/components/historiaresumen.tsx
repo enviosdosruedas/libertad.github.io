@@ -17,7 +17,7 @@ export function HistoriaResumen() {
       </CardHeader>
       <CardContent className="text-center">
         <p className="text-foreground mb-6 text-base leading-relaxed">
-          Fundado el 20 de octubre de 1906, el Club Atlético Libertad es una institución emblemática
+          Fundado el 18 de Marzo del 1906, el Club Atlético Libertad es una institución emblemática
           del fútbol uruguayo, arraigada en la ciudad de Canelones. A lo largo de más de un siglo,
           el club ha sido un faro de deporte y comunidad, cosechando logros y forjando una identidad
           fuerte y respetada. Desde sus humildes comienzos hasta convertirse en un referente,
