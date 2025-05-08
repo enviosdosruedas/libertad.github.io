@@ -12,7 +12,7 @@ export function HazteSocio() {
         <div className="text-center mb-12">
           <ShieldCheck className="h-16 w-16 mx-auto text-primary mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold text-primary tracking-tight">
-            ¡Únete a la Familia Gumarela! Hazte Socio.
+            ¡Únete a la Familia del Decano! Hazte Socio.
           </h2>
           <p className="mt-3 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Vive la pasión por Club Atlético Libertad desde adentro. Disfruta de beneficios exclusivos y apoya a tu equipo como nunca antes.
@@ -76,7 +76,7 @@ export function HazteSocio() {
                 <ShoppingCart className="h-10 w-10 mx-auto text-accent mb-3" />
                 <CardTitle className="text-2xl text-foreground">Tienda Oficial Libertad</CardTitle>
                 <CardDescription>
-                  Viste los colores de tu pasión. ¡Productos oficiales para verdaderos Gumarelos!
+                  Viste los colores de tu pasión. ¡Productos oficiales para verdaderos hinchas del Decano!
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
