@@ -7,13 +7,13 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from '@/lib/utils';
 
-const geistSans = GeistSans({
-  variable: '--font-geist-sans',
-});
-
-const geistMono = GeistMono({
-  variable: '--font-geist-mono',
-});
+// Removed erroneous function calls:
+// const geistSans = GeistSans({
+//   variable: '--font-geist-sans',
+// });
+// const geistMono = GeistMono({
+//   variable: '--font-geist-mono',
+// });
 
 export const metadata: Metadata = {
   title: 'Club Libertad Oficial',
@@ -27,11 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body 
+      <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          geistSans.variable, 
-          geistMono.variable
+          GeistSans.variable, // Use .variable directly
+          GeistMono.variable  // Use .variable directly
         )}
       >
         <div className="relative flex min-h-dvh flex-col bg-background">
