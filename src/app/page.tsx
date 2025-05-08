@@ -9,6 +9,7 @@ import { ProximosPartidos } from '@/components/proximos-partidos';
 import { UltimasNoticias } from '@/components/ultimasnoticias';
 import { HistoriaResumen } from '@/components/historiaresumen';
 import { ElClubHoy } from '@/components/elclubhoy';
+import { HazteSocio } from '@/components/haztesocio';
 
 export default function HomePage() {
   return (
@@ -49,6 +50,8 @@ export default function HomePage() {
       </section>
 
       <ElClubHoy />
+      
+      <HazteSocio />
 
       <section className="py-12 md:py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
@@ -83,3 +86,4 @@ export default function HomePage() {
     </div>
   );
 }
+
