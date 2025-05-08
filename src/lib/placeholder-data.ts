@@ -106,7 +106,7 @@ export const technicalStaff: TeamMember[] = [
     bio: 'Strategic thinker leading the team with passion and tactical acumen.',
   },
   {
-    id:s2: 's2',
+    id: 's2',
     name: 'Juan Samudio',
     role: 'Assistant Coach',
     category: 'Technical Staff',
